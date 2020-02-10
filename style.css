@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image:url(https://media.istockphoto.com/photos/close-up-real-estate-agent-with-house-model-hand-putting-signing-a-picture-id1130833057?k=6&m=1130833057&s=612x612&w=0&h=-UMcbugrsTpQbIzq0_pUfolbx2OwBl_TI24JjeeUkF8=
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.header-container {
+    text-align: center;
+}
+
+
+.container {
+    width: 600px;
+    height: 300px;
+    /* border: 1px black solid; */
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+    margin-top: 45px;
+    font-size: 18px;
+}
+
+.inner-button {
+    display: flex;
+    justify-content: center;
+}
+
+.js-start-btn {
+    background: green;
+    color: white;
+    border: 0;
+    font-size: 20px;
+    margin-top: 80px;
+    margin-right: 30px;
+}
+
+.larger-container {
+    border: 1px solid;
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 120px;
+}
+
+
+.js-form {
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 120px;
+    color: black;
+    border: none;
+}
+
+fieldset {
+    padding: 40px;
+    margin:0 auto;
+    background-color: white;
+    border: none;
+}
+
+.questionContainer {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.optionContainer {
+    padding: 10px;
+}
+
+.submitContainer {
+    text-align: center;
+}
+
+.finalScore {
+    text-align: center;
+}
+
+.scoreboard li {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.scoreboard ul {
+    text-align: center;
+}
+
+.js-number {
+    padding: 0 4%;
+}
+
+.js-score {
+    padding: 0 4%;
+}
+
+
+@media only screen and (max-width: 425px){
+    .container {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        background-color: white;
+        color: black;
+        margin-top: 45px;
+        font-size: 14px;
+    }
+
+    .larger-container {
+        border: 1px solid;
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+        background-color: white;
+        margin-top: 40px;
+    }
+
+    .js-start-btn {
+        background: green;
+        color: white;
+        border: 0;
+        font-size: 12px;
+        margin-right: 30px;
+        margin-top: 0px;
+    }
+
+    .js-form {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        background-color: white;
+        margin-top: 120px;
+        color: black;
+        border: none;
+    }
+
+    .scoreboard ul {
+        text-align: center;
+        padding-right: 12px;
+    }
+
+    .scoreboard li {
+        display: inline-block;
+        font-size: 12px;
+    }
+};
