@@ -97,7 +97,7 @@ function submitButton(){
             STORE.score++;
         }
         else {
-            alert(`you suck , the right answer is "${correct}"`);
+            alert(`better luck next time, the right answer is "${correct}"`);
         }
         $('#answer').hide();
         $('#next').show();
