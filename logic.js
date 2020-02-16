@@ -1,5 +1,5 @@
 function startQuiz() {
-   $('.larger-container').on('click', '.inner-button', function (event){
+   $('.larger-container').on('click', '.js-start-btn', function (event){
        $('.container').hide()
        createForm();
    });
@@ -11,7 +11,7 @@ function createChoices() {
     let question = STORE.questions[STORE.currentQuestion];
     for(let i=0; i<question.choices.length; i++){
         $('.optionContainer').append(`
-        <input type='radio' name='options' id='option${i + 1}' value='${question.choices[i]}' tabindex="1">
+        <input type='radio' name='options' id='option${i + 1}' value='${question.choices[i]}'>
         <label for='option${i + 1}'>${question.choices[i]}</label>
         <br>
         `);
@@ -33,7 +33,7 @@ function finalPage(){
     <p>Final Score</p>
     ${STORE.score}/${STORE.questions.length}
     <br>
-    <button type='button' id='restart' tabindex="7">Restart</button>`
+    <button type='button' id='restart'>Restart</button>`
     )
 };
 
@@ -51,8 +51,8 @@ function createForm() {
                     <div class='optionContainer'>
                     </div>
                     <div class='submitContainer'>
-                        <button typ='submit' id='answer' tabindex="5">Submit</button>
-                        <button type='button' id='next' tabindex='6'>Next</button>
+                        <button typ='submit' id='answer'>Submit</button>
+                        <button type='button' id='next'>Next</button>
                     </div>
                     <div class='finalScore'>
                     </div>
